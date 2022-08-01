@@ -1,0 +1,46 @@
+{
+  "name": "ec-funka-fest",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.8.3",
+    "axios": "^0.27.2",
+    "lodash": "^4.17.21",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-loader-spinner": "^5.1.7-beta.1",
+    "react-promise-tracker": "^2.1.0",
+    "react-redux": "^8.0.2",
+    "react-router-dom": "^6.3.0",
+    "react-toastify": "^9.0.7",
+    "redux-immutable-state-invariant": "^2.1.0",
+    "redux-persist": "^6.0.0",
+    "redux-thunk": "^2.4.1",
+    "reselect": "^4.1.6",
+    "styled-components": "^5.3.5",
+    "twin.macro": "^2.8.2"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.182",
+    "@types/node": "^18.6.1",
+    "@types/react": "^18.0.15",
+    "@types/react-dom": "^18.0.6",
+    "@types/styled-components": "^5.1.25",
+    "@vitejs/plugin-react": "^2.0.0",
+    "autoprefixer": "^10.4.7",
+    "postcss": "^8.4.14",
+    "prettier": "2.7.1",
+    "tailwindcss": "^3.1.6",
+    "typescript": "^4.6.4",
+    "vite": "^3.0.0",
+    "vite-plugin-babel-macros": "^1.0.6"
+  },
+  "author": "Sammy Guttman",
+  "license": "MIT"
+}
