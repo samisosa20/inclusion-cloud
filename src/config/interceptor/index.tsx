@@ -44,6 +44,7 @@ const useInterceptor = (store: storeRedux) => {
 
   const handleRequestError = (error: AxiosError) => {
     console.error(`REQUEST ERROR! => ${error}`);
+    return error
   };
 
   const handleResponseSuccess = (response: AxiosResponse) => {
@@ -51,7 +52,7 @@ const useInterceptor = (store: storeRedux) => {
   };
 
   const handleResponseError = (error: any) => {
-    switch (error.response.status) {
+    switch (error.response?.status) {
       case 401:
         if (error.response.data.message) {
           callErrorToast(error.response.data.message, [], "unAuthToast");
@@ -59,11 +60,11 @@ const useInterceptor = (store: storeRedux) => {
         store.dispatch({ type: "CLEAN_MEMORY_DATA" });
         navigate("/");
         break;
-      default:
-        if (error.response.data.message) {
-          callErrorToast(error.response.data.message, []);
+      /*default:
+        if (error.message) {
+          callErrorToast(error.message, []);
         }
-        return;
+        return;*/
     }
     throw error;
   };

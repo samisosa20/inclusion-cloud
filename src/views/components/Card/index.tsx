@@ -9,7 +9,7 @@ import useControllers from "@/controllers";
 
 
 const Card = (props: CardInterface) => {
-  const {title, message, time, hostname, success} = props
+  const {title, message, time, hostname, success, detail} = props
 
   // Hooks
   const {useComponentHooks} = useControllers()
@@ -43,8 +43,14 @@ const Card = (props: CardInterface) => {
         variant={"input_help"}
         className={success ? "text-black" : "text-red-500"}
       >
-        {typeof time === "number" ? formatTime(time) : time}
+        {success ? formatTime(time) : time}
       </Typography>
+      {!success && <Typography
+        variant={"input_help"}
+        className={success ? "text-black" : "text-red-500"}
+      >
+        {detail}
+      </Typography>}
     </div>
   </div>
 }

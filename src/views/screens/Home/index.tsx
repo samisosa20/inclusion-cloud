@@ -28,6 +28,7 @@ const Home = () => {
             hostname={v.hostname}
             time={v.time}
             success={v.success}
+            detail={v.detail}
           />
         ))}
       </StyledGridContent>
