@@ -1,7 +1,7 @@
 // Package
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { BrowserRouter } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 
 // styles
 import "react-toastify/dist/ReactToastify.css";
@@ -11,7 +11,7 @@ import "./styles/index.css";
 import App from "./App";
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
-    <BrowserRouter>
+    <HashRouter>
       <App />
-    </BrowserRouter>
+    </HashRouter>
 );
