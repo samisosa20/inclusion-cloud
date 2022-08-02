@@ -1,0 +1,1 @@
+import{j as t,a as i}from"./index.e6acfae6.js";const a=s=>{const{text:l,title:r,listOfErrors:e}=s;return t("div",{children:i("div",{className:"flex flex-col justify-center text-center ",children:[r!==""&&t("div",{children:r}),t("div",{children:l}),e&&e.length>0&&e.map((c,d)=>i("div",{children:["\u2022 ",c]},d))]})})};export{a as default};
