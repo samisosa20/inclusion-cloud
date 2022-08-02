@@ -8,9 +8,9 @@
   },
   "scripts": {
     "dev": "vite",
-    "start": "vite preview",
     "build": "tsc && env-cmd -f .env.prod vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.3",
