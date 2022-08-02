@@ -6,7 +6,14 @@ module.exports = {
   ],
   darkMode: 'media',
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        ilusion:{
+          body: "#d3d3d3",
+          header: "#344152"
+        }
+      }
+    },
   },
   plugins: [],
 }

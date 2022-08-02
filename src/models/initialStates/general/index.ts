@@ -1,6 +1,7 @@
 const useGeneralInitialStates = () => {
   const initialStateGeneral = {
-    name: "",
+    refresh: false,
+    list: null,
   };
 
   const initialStateAuth = {};

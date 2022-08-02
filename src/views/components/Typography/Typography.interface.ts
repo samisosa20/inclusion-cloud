@@ -6,7 +6,7 @@ export interface TypographyInterface {
     | "h1"
     | "h2"
     | "subtitle"
-    | "Benefit_title"
+    | "title"
     | "cta_text"
     | "date"
     | "links"

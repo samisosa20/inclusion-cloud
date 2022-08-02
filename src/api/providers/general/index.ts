@@ -1,15 +1,15 @@
 import axios from "axios";
 import { trackPromise } from "react-promise-tracker";
 const useGeneralProvider = () => {
-  const exampleProvirder = (id: number) => {
+  const getStatusProvider = (id: string) => {
     const request = axios({
       method: "GET",
-      url: `users/${id}`,
+      url: `${id}/health/status`,
     });
     return trackPromise(request);
   };
   return {
-    exampleProvirder,
+    getStatusProvider,
   };
 };
 

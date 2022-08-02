@@ -1,6 +1,8 @@
+import useCard from "./card";
 
 const useComponentHooks = () => {
   return {
+    useCard
   };
 };
 

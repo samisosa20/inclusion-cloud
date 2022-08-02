@@ -1,6 +1,6 @@
-# Template React + TS + TW + Vite
+# FactoryFour Project
 
-This is a template to use ReactJs V18 + TypeScript with Vite,
+This project uses ReactJs V18 + TypeScript with Vite,
 using architecture MVC and TailWind library
 
 <div style="display: flex; justify-content: space-around; width: 50%; margin: auto; align-items: center;">
@@ -19,11 +19,27 @@ using architecture MVC and TailWind library
 
 
 ## How to install
-`git clone https://github.com/samisosa20/template-react-ts-mvc.git`
+`git clone https://github.com/samisosa20/inclusion-cloud.git`
 
-`cd template-react-ts-mvc`
+`cd inclusion-cloud`
 
 `npm i`
+
+
+## How to run the project
+
+To run the project in your local machine type the next code inside project's folder
+
+`npm run dev`
+
+## Settings
+
+To change URL API or change frequently to refresh data only need change information in environment files
+search .env, .env.staging and .env.prod in the project's root
+
+Find the next variable to change frequently, the value default is 15sec
+
+`VITE_REFRESH_TIME=[sec]`
 
 ## Author
 [Sammy Guttman](https://github.com/samisosa20)

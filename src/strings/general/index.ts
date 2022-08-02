@@ -1,10 +1,12 @@
 const useGeneralTypes = () => {
-  const SHOW_NAME: string = "SHOW_NAME";
+  const LIST_HEALTH: string = "SHOW_NAME";
+  const RESET_HEALTH: string = "RESET_HEALTH";
   const LOGIN: string = "LOGIN";
 
   return {
-    SHOW_NAME,
+    LIST_HEALTH,
     LOGIN,
+    RESET_HEALTH,
   };
 };
 

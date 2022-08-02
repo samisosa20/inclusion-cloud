@@ -15,11 +15,11 @@ export const StyledTypography: React.FC<TypographyInterface> = styled.p.attrs({
       case "h1":
         return tw`text-4xl font-sans font-bold tracking-wide leading-9`;
       case "h2":
-        return tw`text-2xl font-sans font-bold tracking-wide leading-7`;
+        return tw`text-2xl font-sans font-semibold tracking-wide leading-7`;
       case "subtitle":
         return tw`text-base font-mono font-extrabold tracking-wide leading-4`;
-      case "Benefit_title":
-        return tw`text-base font-sans font-bold tracking-wide leading-4`;
+      case "title":
+        return tw`text-lg font-sans font-bold tracking-wide leading-4`;
       case "cta_text":
         return tw`text-lg font-sans font-extrabold tracking-wide leading-5`;
       case "date":
