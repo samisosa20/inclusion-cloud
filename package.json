@@ -10,7 +10,7 @@
     "dev": "vite",
     "build": "tsc && env-cmd -f .env.prod vite build",
     "preview": "vite preview",
-    "deploy": "gh-pages -d dist"
+    "deploy": "npm run build && gh-pages -d dist"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.3",
