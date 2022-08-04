@@ -1,1 +1,0 @@
-import s from"./index.3393b0d6.js";import{a as e,j as a,O as r}from"./index.e6acfae6.js";import"./index.f84116d6.js";const n=()=>e("div",{className:"bg-ilusion-body min-h-screen",children:[a(s,{}),a("div",{className:"container mx-auto pt-8",children:a(r,{})})]});export{n as default};
