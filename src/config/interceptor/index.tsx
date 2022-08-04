@@ -44,6 +44,7 @@ const useInterceptor = (store: storeRedux) => {
 
   const handleRequestError = (error: AxiosError) => {
     console.error(`REQUEST ERROR! => ${error}`);
+    console.log("handleRequest", error)
     return error
   };
 

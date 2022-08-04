@@ -15,11 +15,12 @@ const useGeneralActions = () => {
   const actGetStatus =
     (
       id: string,
+      cors: boolean,
       onSuccess: Function = () => {},
       onError: Function = () => {}
     ) =>
     async (dispatch: AppDispatch) => {
-        await getStatusProvider(id).then(res => {
+        await getStatusProvider(id, cors).then(res => {
           if (res.status === 200) {
             dispatch({
               type: LIST_HEALTH,
@@ -37,7 +38,7 @@ const useGeneralActions = () => {
           onError && onError(error);
           dispatch({
             type: LIST_HEALTH,
-            payload: { title: id,  success: false, message: "Error", hostname: "OUTAGE", time: error.response.status, detail: error.message},
+            payload: { title: id,  success: false, message: "Error", hostname: "OUTAGE", time: error.response.status, detail: error.response.statusText},
           });
         });
     };

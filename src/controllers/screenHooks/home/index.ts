@@ -23,7 +23,11 @@ const useHome = () => {
   useEffect(() => {
     setInterval(()=>
     listName.forEach((name) => {
-      dispatch(actGetStatus(name));
+        let cors = false
+      if (name === "messages" || name === "invites" || name === "users") {
+        cors = true
+      }
+      dispatch(actGetStatus(name, cors));
     }), import.meta.env.VITE_REFRESH_TIME * 1000)
   }, []);
 
